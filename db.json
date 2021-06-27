@@ -1,0 +1,40 @@
+{
+    "alunos": [
+        {
+            "id": 1,
+            "matricula": "00000-1",
+            "nome": "Rodrigo de Souza Paluma",
+            "curso": "Análise de Sistemas",
+            "anoMatricula": "2020",
+            "cep": "28979-234",
+            "logradouro": "Rua Pasteur",
+            "numero": "90",
+            "bairro": "Centro",
+            "cidade": "Araruama",
+            "estado": "RJ",
+            "identidade": "11622206-8",
+            "emissor": "Detran-RJ",
+            "cpf": "082.345.627-85",
+            "email": "rodrigo.paluma@gmail.com"
+        }
+    ],
+    "professores": [
+        {
+            "id": 1,
+            "matricula": "00000-1",
+            "nome": "Rodrigo de Souza Paluma",
+            "curso": "Análise de Sistemas",
+            "anoMatricula": "2020",
+            "cep": "28979-234",
+            "logradouro": "Rua Pasteur",
+            "numero": "90",
+            "bairro": "Centro",
+            "cidade": "Araruama",
+            "estado": "RJ",
+            "identidade": "11622206-8",
+            "emissor": "Detran-RJ",
+            "cpf": "082.345.627-85",
+            "email": "rodrigo@agenciaondaforte.com.br"
+        }
+    ]
+}
