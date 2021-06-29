@@ -5,13 +5,26 @@
     (keydown.escape)="close('escape')"
     disableClose>
     <p>
-        <button mat-icon-button
+        <button style="position:absolute;left:155px;top:5px;" mat-icon-button
             (click)="close('toggle button')">
             <mat-icon>close</mat-icon>
         </button>
     </p>
-    <button routerLink="/alunos" mat-menu-item>Alunos</button>
-    <button mat-menu-item>Professores</button>
+    <mat-list style="width:200px;" role="list">
+      <mat-list-item style="margin-top:30px;cursor:pointer;" routerLink="/alunos">
+        <mat-icon class="material-icons">
+          how_to_reg
+        </mat-icon> 
+        <span style="margin-left:10px;">Alunos</span>
+      </mat-list-item>
+      <mat-list-item style="cursor:pointer;" routerLink="/professores">
+        <mat-icon class="material-icons">
+          supervised_user_circle
+        </mat-icon> 
+        <span style="margin-left:10px;">Professores</span>
+      </mat-list-item>
+    </mat-list>
+    
   </mat-sidenav>
 
   <mat-sidenav-content>
