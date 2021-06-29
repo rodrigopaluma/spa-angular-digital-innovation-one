@@ -12,7 +12,7 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class AlunosComponent implements OnInit {
 
-  displayedColumns: string[] = ['matricula','nome','curso','cpf','identidade','emissor','email','estado','cidade','acoes'];
+  displayedColumns: string[] = ['matricula','nome','curso','cpf','anoMatricula','acoes'];
   dataSource = new MatTableDataSource<Aluno>();
 
  /*  @ViewChild(MatPaginator) paginator: MatPaginator; */

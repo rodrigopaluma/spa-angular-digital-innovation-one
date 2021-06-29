@@ -2,19 +2,64 @@
     <div fxFlex="10"></div>
     <!--Meio-->
     <div class="grid" fxFlex="80" fxLayoutGap="25px" fxLayout="row wrap">
-            <h1 fxFlex="100" fxFlexFill fxLayoutAlign="space-between">
-                <span>
-                    <mat-icon class="material-icons icon-home">
-                        how_to_reg
-                    </mat-icon> 
-                    Alunos
-                </span>
+        <h1 fxFlex="100" fxFlexFill fxLayoutAlign="space-between">
+            <span>
+                <mat-icon class="material-icons icon-home">
+                    how_to_reg
+                </mat-icon>
+                Alunos
+            </span>
 
-                <button mat-mini-fab routerLink="/" aria-label="Voltar">
-                    <mat-icon>home</mat-icon>
-                </button>
-            </h1>
-            <p>Alunos works!</p>
+            <button mat-mini-fab routerLink="/" aria-label="Voltar">
+                <mat-icon>home</mat-icon>
+            </button>
+        </h1>
+
+        <!--Lista de Alunos-->
+        <table mat-table [dataSource]="dataSource">
+
+            <!-- Matrícula -->
+            <ng-container matColumnDef="matricula">
+                <th mat-header-cell *matHeaderCellDef> Matrícula </th>
+                <td mat-cell *matCellDef="let element"> {{element.matricula}} </td>
+            </ng-container>
+
+            <!-- CPF -->
+            <ng-container matColumnDef="cpf">
+                <th mat-header-cell *matHeaderCellDef> CPF </th>
+                <td mat-cell *matCellDef="let element"> {{element.cpf}} </td>
+            </ng-container>
+
+            <!-- Nome -->
+            <ng-container matColumnDef="nome">
+                <th mat-header-cell *matHeaderCellDef> Nome </th>
+                <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+            </ng-container>
+
+            <!-- Curso -->
+            <ng-container matColumnDef="curso">
+                <th mat-header-cell *matHeaderCellDef> Curso </th>
+                <td mat-cell *matCellDef="let element"> {{element.curso}} </td>
+            </ng-container>
+
+            <!-- Ano -->
+            <ng-container matColumnDef="anoMatricula">
+                <th mat-header-cell *matHeaderCellDef> Ano Matrícula </th>
+                <td mat-cell *matCellDef="let element"> {{element.anoMatricula}} </td>
+            </ng-container>
+
+            <!-- Ações -->
+            <ng-container matColumnDef="acoes">
+                <th mat-header-cell *matHeaderCellDef> Ações </th>
+                <td mat-cell *matCellDef="let element"> Ação </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator> -->
+
     </div>
     <div fxFlex="10"></div>
 </div>
