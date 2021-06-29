@@ -1,12 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }
 
 .container {
     width: 100%;
-    height: 97%;
-    margin: 0 auto;
+    min-height: 100%;
+    margin: 0;
     padding: 0;
-    position: absolute;
+    background-color: #fff !important;
+}
+
+.grid {
+     margin-top: 80px;
+     height: 100%;
+     display: flex;
+}
+
+.mat-toolbar {
+    position: fixed;
+}
+
+.mat-drawer-container {
+    background-color: #fff !important;
+    height: 100% !important;
 }
