@@ -9,10 +9,15 @@
                 </mat-icon>
                 Alunos
             </span>
-
-            <button mat-mini-fab routerLink="/" aria-label="Voltar">
-                <mat-icon>home</mat-icon>
-            </button>
+            <div>
+                <button mat-mini-fab routerLink="/" aria-label="Voltar">
+                    <mat-icon>arrow_back</mat-icon>
+                </button>
+                <button [style.margin-left]="'5px'" mat-mini-fab routerLink="/alunos/novo" aria-label="Cadastrar Novo Aluno">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+            
         </h1>
 
         <!--Lista de Alunos-->

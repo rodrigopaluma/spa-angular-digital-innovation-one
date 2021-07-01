@@ -1,0 +1,117 @@
+<div class="container" fxFlex="100" fxFlexFill>
+    <div fxFlex="10"></div>
+    <!--Meio-->
+    <div class="grid" fxFlex="80" fxLayoutGap="10px" fxLayout="row wrap" fxLayoutAlign="space-between center">
+        <h1 fxFlex="100" fxFlexFill fxLayoutAlign="space-between">
+            <span>
+                <mat-icon class="material-icons icon-home">
+                    add
+                </mat-icon>
+                Novo Aluno
+            </span>
+
+            <div>
+                <button mat-mini-fab routerLink="/" aria-label="Início">
+                    <mat-icon>home</mat-icon>
+                </button>
+                <button [style.margin-left]="'5px'" mat-mini-fab routerLink="/alunos" aria-label="Voltar">
+                    <mat-icon>arrow_back</mat-icon>
+                </button>
+            </div>
+        </h1>
+
+        <!--Formulário de Alunos-->
+        <mat-form-field fxFlex="30" fxFlexFill appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="15" fxFlexFill appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input matInput placeholder="Informe o e-mail do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="15" fxFlexFill appearance="outline">
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="Telefone do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+            <mat-label>CPF</mat-label>
+            <input matInput placeholder="CPF do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+            <mat-label>Identidade</mat-label>
+            <input matInput placeholder="Identidade do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+            <mat-label>Emissor</mat-label>
+            <input matInput placeholder="Emissor">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+            <mat-label>CEP</mat-label>
+            <input matInput placeholder="CEP do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="20" fxFlexFill appearance="outline">
+            <mat-label>Logradouro</mat-label>
+            <input matInput placeholder="Informe o logradouro">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="8" fxFlexFill appearance="outline">
+            <mat-label>Número</mat-label>
+            <input matInput placeholder="CEP do Aluno">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="12" fxFlexFill appearance="outline">
+            <mat-label>Complemento</mat-label>
+            <input matInput placeholder="Complemento">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+            <mat-label>Bairro</mat-label>
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+            <mat-label>Estado</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let estado of estados" [value]="estado.value">
+                {{estado.viewValue}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="20" fxFlexFill appearance="outline">
+            <mat-label>Cidade</mat-label>
+            <input matInput>
+        </mat-form-field>
+
+        <div fxFlex="100" fxFlexFill fxLayoutGap="20px" fxLayoutAlign="start center">
+
+            <mat-form-field fxFlex="12" fxFlexFill appearance="outline">
+                <mat-label>Curso</mat-label>
+                <input matInput>
+            </mat-form-field>
+    
+            <mat-form-field fxFlex="8" fxFlexFill appearance="outline">
+                <mat-label>Matrícula</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <mat-form-field fxFlex="10" fxFlexFill appearance="outline">
+                <mat-label>Ano Matrícula</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+        </div>
+
+        <div fxFlex="100" fxFlexFill fxLayoutGap="20px" fxLayoutAlign="end center">
+            <button mat-raised-button color="primary">Salvar Aluno</button>
+        </div>
+    </div>
+    <div fxFlex="10"></div>
+</div>

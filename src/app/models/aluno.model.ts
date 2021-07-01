@@ -14,4 +14,5 @@ export interface Aluno {
     emissor: string;
     cpf: string;
     email: string;
+    telefone: string;
 }
